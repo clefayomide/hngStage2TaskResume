@@ -1,0 +1,454 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #fbbd0b;
+    width: 90%;
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.hng-logo,
+.i4g-logo,
+.zuri-logo {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.hng-logo {
+    padding-left: 20px;
+}
+
+.hng,
+.i4g,
+.zuri {
+    text-decoration: none;
+}
+
+.profile-image-container {
+    position: relative;
+}
+
+.profile-image {
+    width: 60%;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    object-fit: cover;
+}
+
+.name-title {
+    position: absolute;
+    bottom: 0;
+    left: 67.5px;
+    width: 60%;
+    height: 80px;
+    padding-top: 18px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    background: #eb6028;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.name {
+    font-weight: 500;
+    color: #fbfafa
+}
+
+.title {
+    font-weight: 500;
+    color: #beb5af;
+    font-size: small;
+}
+
+.personal-profile-container,
+.work-exp-container,
+.edu-history-container,
+.skills-container {
+    background: #fbfafa;
+    padding: 20px;
+    width: 90%;
+    height: 320px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    transition: 0.5s ease-out;
+}
+
+.personal-profile-container:hover,
+.work-exp-container:hover,
+.edu-history-container:hover,
+.skills-container:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.work-exp-container {
+    height: 370px;
+}
+
+.edu-history-container {
+    height: 305px;
+}
+
+.skills-container {
+    height: 360px;
+}
+
+
+.personal-profile-header,
+.work-exp-header,
+.edu-history-header,
+.skills-header {
+    color: #eb6028;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 10px 0;
+    border-bottom: 3px solid #beb5af;
+}
+
+.personal-profile-text,
+.work-exp-text,
+.edu-history-text,
+.course,
+.skills-text {
+    font-size: small;
+    text-align: justify;
+    color: #beb5af;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.job-title,
+.uni-name,
+.skills-text {
+    font-size: 14px;
+    color: black;
+}
+
+.bi-heart-fill,
+.bi-briefcase-fill,
+.bi-book,
+.bi-code-slash {
+    position: relative;
+    bottom: 325px;
+    left: 43%;
+    padding: 8px;
+    background: #eb6028;
+    color: #fbfafa;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.bi-briefcase-fill {
+    bottom: 370px;
+}
+
+.bi-book {
+    bottom: 315px;
+}
+
+.bi-code-slash {
+    bottom: 365px;
+}
+
+.year {
+    padding-top: 8px;
+}
+
+.skills-text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills-list {
+    background: #513d20;
+    width: 120px;
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+    list-style: none;
+    font-size: x-small;
+    color: #fbfafa;
+}
+
+.html,
+.fetch {
+    background: rgb(80, 80, 206);
+}
+
+.css,
+.com {
+    background: rgb(38, 38, 88);
+}
+
+.git ,
+.crtvy{
+    background: #00b1d2ff;
+}
+
+.js,
+.ps {
+    background: #101820ff;
+}
+
+.oop,
+.at {
+    background: #f65058ff;
+}
+
+.fp,
+.mt {
+    background: #97781b;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.linkedin,
+.github {
+    width: 80px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    transition: 0.5s ease-;
+}
+
+.linkedin:hover,
+.github:hover {
+    background: #eb6028;
+}
+
+.bi-linkedin {
+    color: rgb(80, 80, 206);
+    margin-right: 10px;
+}
+
+.github {
+    margin-left: 10px;
+}
+
+@media (max-width: 1500px) {
+    .container {
+        width: 50%;
+
+    }
+
+    .skills-container {
+        height: 250px;
+    }
+
+    .bi-code-slash {
+        bottom: 245px;
+    }
+
+    .bi-heart-fill {
+        bottom: 225px;
+    }
+
+    .personal-profile-container {
+        height: 225px;
+    }
+
+    .name-title {
+        left: 145px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 50%;
+
+    }
+
+    .skills-container {
+        height: 250px;
+    }
+
+    .bi-code-slash {
+        bottom: 245px;
+    }
+
+    .bi-heart-fill {
+        bottom: 225px;
+    }
+
+    .personal-profile-container {
+        height: 225px;
+    }
+
+    .name-title {
+        left: 127px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+
+    .skills-container {
+        height: 250px;
+    }
+
+    .bi-code-slash {
+        bottom: 245px;
+    }
+
+    .bi-heart-fill {
+        bottom: 225px;
+    }
+
+    .personal-profile-container {
+        height: 225px;
+    }
+
+    .name-title {
+        left: 144px;
+    }
+
+    .work-exp-container,
+    .personal-profile-container,
+    .edu-history-container,
+    .skills-container {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        height: 250px;
+    }
+
+    .bi-code-slash {
+        bottom: 245px;
+    }
+
+    .bi-heart-fill {
+        bottom: 225px;
+    }
+
+    .personal-profile-container {
+        height: 225px;
+    }
+
+    .name-title {
+        left: 138px;
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        width: 90%;
+    }
+
+    .name-title {
+        left: 78.5px;
+    }
+
+    .bi-heart-fill {
+        bottom: 305px;
+    }
+
+    .skills-container {
+        height: 360px;
+    }
+
+    .bi-code-slash {
+        bottom: 365px;
+    }
+
+    .personal-profile-container {
+        height: 320px;
+    }
+
+    .work-exp-container,
+    .personal-profile-container,
+    .edu-history-container,
+    .skills-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 414px){
+    .name-title {
+        left: 74.5px;
+    }
+
+    .bi-heart-fill {
+        bottom: 325px;
+    }
+}
+
+@media (max-width: 375px) {
+    .name-title {
+        left: 67.5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .bi-heart-fill {
+        bottom: 345px;
+    }
+
+    .name-title {
+        left: 65px;
+    }
+
+    .personal-profile-container {
+        height: 340px;
+    }
+}
+
+@media (max-width: 320px) {
+    .name-title {
+        left: 58px;
+    }
+
+    .bi-heart-fill {
+        bottom: 390px;
+    }
+
+    .personal-profile-container {
+        height: 375px;
+    }
+
+    .skills-list {
+        width: 100px;
+    }
+
+    .skills-container {
+        height: 375px;
+    }
+
+    .bi-code-slash {
+        bottom: 378px;
+    }
+}
