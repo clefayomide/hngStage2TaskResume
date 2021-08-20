@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="style.css">
     <title>My Resume</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
                 </svg>
             </section>
 
-            <section class="work-exp-container">
+            <section class="work-exp-container" data-aos="fade-left">
                 <h4 class="work-exp-header">Work Experience</h4>
                 <p class="work-exp-text job-title">Frontend Developer</p>
                 <p class="work-exp-text year">Aug 2021 - Present <br> HNG Internship - Remote</p>
@@ -57,7 +58,7 @@
                 </svg>
             </section>
 
-            <section class="edu-history-container">
+            <section class="edu-history-container" data-aos="fade-right">
                 <h4 class="edu-history-header">Education History</h4>
                 <p class="edu-history-text uni-name">University of Ilorin, Nigeria</p>
                 <p class="course year">B.Ed History - 2021</p>
@@ -70,7 +71,7 @@
                 </svg>
             </section>
 
-            <section class="skills-container">
+            <section class="skills-container" data-aos="fade-left">
                 <h4 class="skills-header">Skills</h4>
                 <ul class="skills-text">
                     <li class="skills-list html">HTMl 5</li>
@@ -110,79 +111,87 @@
             </section>
         </main>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000
+    });
+    </script>
+
+    <script>
+        let personalProfile = document.querySelector(".personal-profile-container")
+        let workExp = document.querySelector(".work-exp-container")
+        let eduHistory = document.querySelector(".edu-history-container")
+        let skills = document.querySelector(".skills-container")
+        let heartEmoji = document.querySelector(".bi-heart-fill")
+        let bookEmoji = document.querySelector(".bi-book")
+        let briefcaseEmoji = document.querySelector(".bi-briefcase-fill")
+        let codeEmoji = document.querySelector(".bi-code-slash")
+    
+        let showHeart = () => {
+            personalProfile.addEventListener("mouseover", () => {
+                heartEmoji.style.opacity = "1"
+            })
+        }
+    
+        showHeart()
+    
+        let hideHeart = () => {
+            personalProfile.addEventListener("mouseout", () => {
+                heartEmoji.style.opacity = "0"
+            })
+        }
+    
+        hideHeart()
+    
+        let showBriefcase = () => {
+            workExp.addEventListener("mouseover", () => {
+                briefcaseEmoji.style.opacity = "1"
+            })
+        }
+    
+        showBriefcase()
+    
+        let hideBriefcase = () => {
+            workExp.addEventListener("mouseout", () => {
+                briefcaseEmoji.style.opacity = "0"
+            })
+        }
+    
+        hideBriefcase()
+    
+        let showBook = () => {
+            eduHistory.addEventListener("mouseover", () => {
+                bookEmoji.style.opacity = "1"
+            })
+        }
+    
+        showBook()
+    
+        let hideBook = () => {
+            eduHistory.addEventListener("mouseout", () => {
+                bookEmoji.style.opacity = "0"
+            })
+        }
+    
+        hideBook()
+    
+        let showCode = () => {
+            skills.addEventListener("mouseover", () => {
+                codeEmoji.style.opacity = "1"
+            })
+        }
+    
+        showCode()
+    
+        let hideCode = () => {
+            skills.addEventListener("mouseout", () => {
+                codeEmoji.style.opacity = "0"
+            })
+        }
+    
+        hideCode()
+    </script>
 </body>
-<script>
-    let personalProfile = document.querySelector(".personal-profile-container")
-    let workExp = document.querySelector(".work-exp-container")
-    let eduHistory = document.querySelector(".edu-history-container")
-    let skills = document.querySelector(".skills-container")
-    let heartEmoji = document.querySelector(".bi-heart-fill")
-    let bookEmoji = document.querySelector(".bi-book")
-    let briefcaseEmoji = document.querySelector(".bi-briefcase-fill")
-    let codeEmoji = document.querySelector(".bi-code-slash")
-
-    let showHeart = () => {
-        personalProfile.addEventListener("mouseover", () => {
-            heartEmoji.style.opacity = "1"
-        })
-    }
-
-    showHeart()
-
-    let hideHeart = () => {
-        personalProfile.addEventListener("mouseout", () => {
-            heartEmoji.style.opacity = "0"
-        })
-    }
-
-    hideHeart()
-
-    let showBriefcase = () => {
-        workExp.addEventListener("mouseover", () => {
-            briefcaseEmoji.style.opacity = "1"
-        })
-    }
-
-    showBriefcase()
-
-    let hideBriefcase = () => {
-        workExp.addEventListener("mouseout", () => {
-            briefcaseEmoji.style.opacity = "0"
-        })
-    }
-
-    hideBriefcase()
-
-    let showBook = () => {
-        eduHistory.addEventListener("mouseover", () => {
-            bookEmoji.style.opacity = "1"
-        })
-    }
-
-    showBook()
-
-    let hideBook = () => {
-        eduHistory.addEventListener("mouseout", () => {
-            bookEmoji.style.opacity = "0"
-        })
-    }
-
-    hideBook()
-
-    let showCode = () => {
-        skills.addEventListener("mouseover", () => {
-            codeEmoji.style.opacity = "1"
-        })
-    }
-
-    showCode()
-
-    let hideCode = () => {
-        skills.addEventListener("mouseout", () => {
-            codeEmoji.style.opacity = "0"
-        })
-    }
-
-    hideCode()
-</script>
 </html>
